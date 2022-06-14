@@ -1,0 +1,42 @@
+##### run type (either standard, parameter_opt or onebody_density)
+run_type            :   standard
+#run_type            :   parameter_opt
+#run_type            :   onebody_density
+
+##### system setup
+num_of_dimensions   :   3
+num_of_particles    :   1
+jastrow             :   no
+printout_freq       :   1
+
+##### montecarlo settings
+num_of_cycles       :   100000
+equilibration       :   10
+step_length         :   0.05
+hastings            :   yes
+##(used for N=10)
+#alpha               :   0.498750367677011
+##(used for N=20)
+#alpha               :   0.497531273278471
+##(used for N=25)
+#alpha               :   0.497081445867864
+##(used for N=30)
+#alpha               :   0.496649669245756
+alpha               :   0.7
+jastrow_parameter   :   0.0043
+diffusion_coeff     :   0.5
+beta                :   1.0
+#beta                :   2.82843
+
+##### alpha optimization
+learning_rate       :   0.005
+num_of_opt_cycles   :   100000
+eps                 :   0.00001
+max_iterations      :   300
+
+##### one-body density
+onebody_min         :   0
+onebody_max         :   2
+onebody_dr          :   0.05
+##direction can be either x or z
+direction           :   z

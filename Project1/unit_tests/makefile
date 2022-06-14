@@ -1,0 +1,2 @@
+all:
+	mpic++ -o unit_tests unit_tests.cpp ../main_code/lin.cpp ../main_code/system.cpp ../main_code/energy/haroscjastrow.cpp ../main_code/energy/harosc.cpp ../main_code/energy/kinetic.cpp ../main_code/readfile/read_input.cpp ../main_code/setstate/initstate.cpp ../main_code/setstate/unirand.cpp ../main_code/wavefunc/wavefunc.cpp ../main_code/wavefunc/gauss.cpp ../main_code/wavefunc/gaussjastrow.cpp ../main_code/sampler.cpp ../main_code/montec/montec.cpp ../main_code/montec/metrop.cpp ../main_code/montec/hastings.cpp -std=c++11
